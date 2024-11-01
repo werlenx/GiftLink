@@ -1,0 +1,27 @@
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #B40643;
+    background-color: #FEAA40;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 4px 4.5px 0px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #ff9800, #f57c00);
+    transform: scale(1.05);
+}
+
+.ico{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

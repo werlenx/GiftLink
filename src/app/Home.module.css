@@ -1,0 +1,70 @@
+/* Home.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.main {
+    padding: 20px;
+    background: linear-gradient(180deg,#270B44, #A91EB9);
+    color: #fff;
+}
+
+/* banner */
+.banner{
+    font-family: roboto;
+}
+.banner h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    padding: 10px 0;
+    color: #F581CA;
+}
+
+.buttons{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 20px;
+    /* background-color: #241027; */
+}
+.section{
+    background: linear-gradient(45deg, #EC8779, #B40643);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/*formulario*/
+.formContainer{
+    margin: 40px 0;
+    /* background-color: red; */
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+.campo label{
+    color: #FEAA40;
+    display: flex;
+    flex-direction: column;
+
+}
+/* Reset básico para o input */
+.campo input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho do input */
+}
+
+/* Estilo adicional para focus (foco) */
+.campo input:focus {
+    border-color: #ff9800; /* Cor de destaque para o input no foco */
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
