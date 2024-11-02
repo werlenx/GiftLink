@@ -1,6 +1,9 @@
 /* global.css */
 
 /* Variáveis de cores e fonte */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+
 :root {
     --primary-color: #3498db;   /* Azul claro */
     --secondary-color: #2ecc71; /* Verde claro */

@@ -23,11 +23,13 @@
 }
 
 .textInfo h5{
+    font-family: lato,sans-serif;
     font-size: 20px;
     line-height: 0.5;
 }
 
 .textInfo p{
+    font-family: open Sans, sans-serif;
     font-size: 14px;
     line-height: 1;
 }

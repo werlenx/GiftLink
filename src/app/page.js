@@ -7,7 +7,7 @@ import CardMini from "./components/CardMini.js";
 export default function Home() {
     const countCollab = 10;
     const balance = 1000;
-    const title = "Dogs Donate";
+    const title = "Papai urso";
     const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim id nunc tincidunt faucibus. Donec euismod, dolor ac ultricies bibendum, purus lectus bibendum tellus, vel ultricies sapien felis a nunc.";
     const imgUrl = "./getImg.png";
     return (
@@ -26,7 +26,7 @@ export default function Home() {
                     Apoie causas com transparência e segurança. 
                     Juntos, fazemos a diferença!"
                     </h2>
-                    <div className={styles.buttons}>
+                    <div className={styles.button_container}>
                         <Button label="Conectar MetaMask" ico="/MetaMask.png"/>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ export default function Home() {
                         n_collabs={countCollab} 
                         balance={balance}
                     />
-                    <div className={styles.buttons}>
+                    <div className={styles.button_container}>
                         <Button label="Doação" ico="./donate_ico.png"/>
                         <Button label="Saque" ico="./withdraw_ico.png"/>
                     </div>
@@ -48,30 +48,31 @@ export default function Home() {
                     </div>
                 </section>
                 <div className={styles.formContainer}>
-                    <h2 className="formTitle">Crie uma campanha</h2>
+                    <h2 className={styles.formTitle}>Crie uma campanha</h2>
                     <div className={styles.campo}>
                         <label className="formLabel" htmlFor="nome">Nome</label>
-                        <input type="text" id="nome" placeholder="Digite um nome para a campanha..." className="formInput" />
+                        <input type="text" id="nome" placeholder="Informe um nome para sua campanha." />
                     </div>
                     <div className={styles.campo}>
-                        <label className="formLabel" htmlFor="descricao">Descrição</label>
-                        <input type="text" id="descricao" placeholder="Digite um nome para a campanha..." className="formInput" />
+                        <label htmlFor="descricao">Descrição</label>
+                        <input type="text" id="descricao" placeholder="Faça a descrição da sua campanha." />
                     </div>
                     <div className={styles.campo}>
-                        <label className="formLabel" htmlFor="imgUrl">URL da imagem</label>
-                        <input type="text" id="imgUrl" placeholder="Digite um nome para a campanha..." className="formInput" />
+                        <label htmlFor="imgUrl">URL da imagem</label>
+                        <input type="text" id="imgUrl" placeholder="Informe a URL da imagem da campanha." />
                     </div>
                     <div className={styles.campo}>
-                        <label className="formLabel" htmlFor="videoUrl">URL do video</label>
-                        <input type="text" id="videoUrl" placeholder="Digite um nome para a campanha..." className="formInput" />
+                        <label htmlFor="videoUrl">URL do video</label>
+                        <input type="text" id="videoUrl" placeholder="Informe a URL da imagem da campanha." />
                     </div>
-                    <div className={styles.buttons}>
+                    <div className={styles.button_container}>
                         <Button label="Saque" ico="./send_ico.png"/>
                     </div>
                 </div>
 
 
             </main>
+            
         </>
     );
 }
