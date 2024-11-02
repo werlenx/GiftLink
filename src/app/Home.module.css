@@ -106,3 +106,47 @@
     border-color: #ff9800;
     box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
 }
+/*rodape*/
+
+.rodape{
+    color: #270B44;
+    font-size: 11px;
+}
+.rodape a {
+    cursor: pointer;
+    color: #007BFF; 
+    text-decoration: none; 
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+.rodape a {
+    cursor: pointer;
+    color: #FEAA40; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado do link */
+    transition: color 0.3s, text-shadow 0.3s; /* Suaviza transições */
+}
+
+.rodape a:hover {
+    color: #0056b3; /* Muda a cor ao passar o mouse */
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efeito de sombra ao passar o mouse */
+}
+
+.rodape ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding padrão */
+}
+
+.rodape li {
+    display: inline; /* Exibe os itens da lista em linha */
+    margin: 0 10px; /* Espaçamento entre os itens */
+}
+

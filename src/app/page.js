@@ -30,7 +30,7 @@ export default function Home() {
                         <Button label="Conectar MetaMask" ico="/MetaMask.png"/>
                     </div>
                 </div>
-                <section className={styles.section}>
+                <section className={styles.section} id="campanhas-ativas">
                     <CardCampaign 
                         imgUrl={imgUrl} 
                         title={title} 
@@ -51,7 +51,7 @@ export default function Home() {
                     </div>
                 </section>
                 <div className={styles.formContainer}>
-                    <h2 className={styles.formTitle}>Crie uma campanha</h2>
+                    <h2 className={styles.formTitle} id="criar-campanha">Crie uma campanha</h2>
                     <div className={styles.campo}>
                         <label className="formLabel" htmlFor="nome">Nome</label>
                         <input type="text" id="nome" placeholder="Informe um nome para sua campanha." />
@@ -72,7 +72,16 @@ export default function Home() {
                         <Button label="Enviar" ico="./send_ico.png"/>
                     </div>
                 </div>
-
+                <hr className={styles.divisor}/>
+                <footer className={styles.rodape}>
+                    <p>
+                        2024 by Werlen Araujo <a target="_blank" rel="noopener noreferrer" href="https://wa.me/91985055247">Contato</a>
+                    </p>
+                    <ul>
+                        <li><a href="#campanhas-ativas">Campanhas Ativas</a></li>
+                        <li><a href="#criar-campanha">Criar Campanha</a></li>
+                    </ul>
+                </footer>
 
             </main>
             
