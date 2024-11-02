@@ -69,7 +69,7 @@ export default function Home() {
                         <input type="text" id="videoUrl" placeholder="Informe a URL da imagem da campanha." />
                     </div>
                     <div className={styles.button_container}>
-                        <Button label="Saque" ico="./send_ico.png"/>
+                        <Button label="Enviar" ico="./send_ico.png"/>
                     </div>
                 </div>
 
