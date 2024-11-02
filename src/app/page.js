@@ -42,7 +42,10 @@ export default function Home() {
                         <Button label="Doação" ico="./donate_ico.png"/>
                         <Button label="Saque" ico="./withdraw_ico.png"/>
                     </div>
+                    <h2 className={styles.title}>Campanhas ativas</h2>
+                    <hr className={styles.divisor}/>
                     <div className={styles.list}>
+                        <CardMini title={title} description={description} imgUrl={imgUrl}/>
                         <CardMini title={title} description={description} imgUrl={imgUrl}/>
                         <CardMini title={title} description={description} imgUrl={imgUrl}/>
                     </div>

@@ -10,7 +10,7 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
-    box-shadow: 4px 4.5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2.5px 0px rgba(0, 0, 0, 0.5);
     margin: 5px;
 
 }

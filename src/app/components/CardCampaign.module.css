@@ -1,11 +1,11 @@
 .container{
     background-color: #FFDEAA;
     padding: 10px;
-    margin: 5px;
     display: flex;
     border-radius: 14px;
     flex-direction: column;
-    box-shadow: 6px 8px 0px rgba(0, 0, 0, 0.5)
+    box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.5);
+    
 
 }
 .info{
@@ -39,7 +39,7 @@
 
 .textInfo p{
     font-family: open Sans, sans-serif;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1;
 }
 .data{
