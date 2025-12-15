@@ -1,8 +1,11 @@
+"use client"
 import Head from "next/head";
 import Button from "./components/Button.js"
 import styles from './Home.module.css';
 import CardCampaign from "./components/CardCampaign.js";
 import CardMini from "./components/CardMini.js";
+import { useState } from "react";
+import { doLogin } from "@/service/connectWallet.js";
 
 export default function Home() {
     const countCollab = 10;
@@ -10,6 +13,12 @@ export default function Home() {
     const title = "Papai urso";
     const description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel enim id nunc tincidunt faucibus. Donec euismod, dolor ac ultricies bibendum, purus lectus bibendum tellus, vel ultricies sapien felis a nunc.";
     const imgUrl = "./getImg.png";
+    const [message, setMessage] = useState();
+
+    const handleConectMetamask = () =>{
+        setMessage("Conectando a Metamask")
+        doLogin().then(account => {setMessage("wallet connected")})
+    }
     return (
         <>
             <Head>
@@ -27,8 +36,15 @@ export default function Home() {
                     Juntos, fazemos a diferença!"
                     </h2>
                     <div className={styles.button_container}>
-                        <Button label="Conectar MetaMask" ico="/MetaMask.png"/>
+                        <Button onClick={handleConectMetamask} label="Conectar MetaMask" ico="/MetaMask.png"/>
                     </div>
+                    {
+                        message
+                        ?<div role="alert">{message}</div>
+                        :<></>
+
+                    }
+                    
                 </div>
                 <section className={styles.section} id="campanhas-ativas">
                     <CardCampaign 
