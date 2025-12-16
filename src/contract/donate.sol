@@ -47,10 +47,24 @@ contract DonateCrypto{
         require(campaign.active == true, "this campaign is closed");
         require(campaign.balance > fee, "this campaign dos not have enough balance");
 
-        address payable recipient = payable(campaign.author);
-        recipient.call{value: campaign.balance - fee}("");
+        uint256 ammountToWithdraw = campaign.balance -fee;
+        campaign.active = false;
+        campaign.balance = 0;
 
-        Campaigns[id].active = false;
+        (bool success, ) = payable(campaign.author).call{value: ammountToWithdraw}("");
+
+        require (success, "Falha na transferencia");
+
+    }
+
+    function withdraw2(uint id) public{
+        Campaign memory campaign = campaigns[id];
+        require(campaign.author == msg.sender, "You not have permission");
+        require(campaign.active = true, "This campaign is closed");
+        require(campaign.balace > fee, "this campaign do not have enough balance");
+
+        address payable recipient = payable(campaign.author);
+        recipient
     }
 
 }
